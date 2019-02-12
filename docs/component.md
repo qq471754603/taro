@@ -71,7 +71,7 @@ class Welcome extends Component {
 
 `render()` 函数应该纯净，意味着其不应该改变组件的状态，其每次调用都应返回相同的结果，同时不直接和浏览器/小程序交互。若需要和浏览器/ 小程序交互，将任务放在`componentDidMount()` 阶段或其他的生命周期方法。保持 `render()` 方法纯净使得组件更容易思考。
 
-> 在 React/Nerv 中，`render()` 可以返回多种数据结构，但 Taro 暂时只支持两种。因为 Taro 必须把 JSX  编译成微信小程序模板。当 return 的值为 `falsy` 时，实际上会编译成小程序的  `wx:if` 标签。
+> 在 React/Nerv 中，`render()` 可以返回多种数据结构，但 Taro 暂时只支持两种。因为 Taro 必须把 JSX  编译成微信小程序模板。当 return 的值为 `false` 时，实际上会编译成小程序的  `wx:if` 标签。
 
 
 ### constructor()
